@@ -69,6 +69,6 @@ app.post("/",(req,res)=>{
 // f5eb0c66e9
 
 
-app.listen(3000,()=>{
+app.listen(process.env.PORT || 3000,()=>{
     console.log("server running at port 3000");
 })
