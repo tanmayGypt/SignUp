@@ -51,7 +51,7 @@ app.post("/",(req,res)=>{
             console.log(JSON.parse(data) + " \n" + response.statusCode);
             var status=Number(response.statusCode);
             if(status>=400 && status <500){
-                res.sendFile(__dirname +"/failure.html");
+                res.sendFile("https://their-site.netlify.app/sub-folder" +"/failure.html");
             }
         })
     });
