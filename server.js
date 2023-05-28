@@ -18,6 +18,7 @@ app.get("/",(req,res)=>{
 })
 
 app.post("/",(req,res)=>{
+    res.sendFile(__dirname +"/failure.html");
 
     const name=req.body.name;
     const email=req.body.email;
